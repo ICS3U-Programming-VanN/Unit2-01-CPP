@@ -3,7 +3,7 @@
 // Created by: Van Nguyen
 // Date: September 21th, 2022
 // This program prints out the area and circumference of a
-// circle with a diameter of 13cm.
+// circle with a radius of 15mm.
 
 
 #include <iostream>
@@ -12,13 +12,13 @@
 
 int main() {
     // Initialize Variables
-    double diameter = 13;
-    double radius = diameter / 2;
+    double radius = 15;
+    double diameter = radius * 2;
     // Calculates the Area and Circumference of the circle
-    double area = floor(M_PI * pow(radius, 2) * 100) / 100;
-    double circumference = floor(M_PI * diameter * 100) / 100;
+    double area = M_PI * pow(radius, 2);
+    double circumference = M_PI * diameter;
     // Outputs the Area and Circumference of the circle
-    std::cout << "For a circle with a diameter of 13cm:" << std::endl;
-    std::cout << "Area: " << area << "cm^2" << std::endl;
-    std::cout << "Circumference: " << circumference << "cm" << std::endl;
+    std::cout << "For a circle with a radius of 15mm:" << std::endl;
+    std::cout << "Area: " << area << "mm^2" << std::endl;
+    std::cout << "Circumference: " << circumference << "mm" << std::endl;
 }
